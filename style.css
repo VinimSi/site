@@ -1,0 +1,108 @@
+/* Estilo básico pra deixar bonito */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+:root{
+  --bg-color: #f0f2f5;
+  --text-color: #000;
+  --header-bg: #2d2dff;
+  --link-color: #2d2dff;
+  --card-bg: white;
+  --footer-bg: #222;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #fff;
+  --header-bg: #1f1f3f;
+  --link-color: #8ab4f8;
+  --card-bg: #1e1e1e;
+  --footer-bg: #111;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--header-bg);
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+body.scrolled .top-btn{
+  display: block;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+html {
+  color-scheme: dark;
+}
+
+header {
+  background-color: var(--header-bg);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.projeto {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.projeto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+body.dark .projeto {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark .projeto:hover {
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 15px;
+}
+
+a {
+  color: #2d2dff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
