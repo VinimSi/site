@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button onclick="scrollToTop()" class="top-btn">↑ Topo</button>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Vinicius Moreira da Silva</h1>
+    <p>Desenvolvedor Front-End</p>
+  </header>
+
+  <!-- Seção de apresentação -->
+  <section>
+    <h2>Sobre Mim</h2>
+    <p>
+      Olá! Eu sou um desenvolvedor que gosta de criar sites e aplicações com foco em usabilidade.
+      Estou estudando HTML, CSS, JavaScript, React e Python. Estou estudando desde 2024 e gosto de aprender coisas novas e resolver problemas com código, sempre buscando conteúdo novo pra aprender.
+    </p>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <div class="projeto">
+    <ul>
+      <li>HTML5 (em aprendizado).</li>
+      <li>CSS3 (em aprendizado).</li>
+      <li>JavaScript (em aprendizado).</li>
+      <li>Python3 (em aprendizado).</li>
+      <li>Aplicações com Kivy (em aprendizado).</li>
+    </ul>
+  </div>
+  </section>
+
+  <!-- Lista de projetos -->
+  <section>
+    <h2>Projetos</h2>
+
+      <!-- Projeto 1 -->
+      <div class="projeto">
+        <h3>Python</h3>
+        <p>Aqui umas brincadeiras minhas que faço no python enquanto aprendo!</p>
+        <p>
+          📁 <a href="https://github.com/VinimSi/Portifolio" target="_blank">GitHub</a>
+        </p>
+      </div>
+  </section>
+
+  <!-- Seção de contato -->
+  <section>
+    <h2>Contato</h2>
+    <p>📧 vini_00vi@hotmail.com</p>
+    <p>🐱 <a href="https://github.com/VinimSi" target="_blank">GitHub</a> |
+       💼 <a href="hro.html" target="_blank">LinkedIn</a></p> <!--para atualizar-->
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 - Vinicius Moreira da Silva. Todos os direitos reservados.</p>
+  </footer>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+    function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  window.addEventListener('scroll', () => {
+    document.body.classList.toggle('scrolled', window.scrollY > 100);
+  });
+  </script>
+</body>
+</html>
